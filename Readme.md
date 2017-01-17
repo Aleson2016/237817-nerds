@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ale Son](https://up.htmlacademy.ru/htmlcss/16/user/237817).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов] (https://htmlacademy.ru/profile/amaringo).
 
 ---
 
