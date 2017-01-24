@@ -5,79 +5,66 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header>
-			<div class="main-header">
-    		<div class="logo">
-					<img src="#" width=#px height=#px alt="Nerd's"> 
-				</div>
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="#">Студия</a>
-						</li>
-						<li>
-							<a href="#">Клиенты</a>
-						</li>
-						<li>
-							<a href="3">Магазин</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="basket">
-					<a href="#">Корзина</a>
-				</div>
+    <header class="container">
+    	<div class="logo">
+				<img src="#" width=#px height=#px alt="Nerd's"> 
 			</div>
-			<div class="container">
-				<div class="promo">
-					<!--Не уверена по поводу тегов span-->
-					<span>Долго, дорого, скурпулезно</span>
-					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-					<a href="#">Узнать больше</a>
-				</div>
-				<div class="slider">
-					<ul>
-						<li>
-							<img src="#" width=# height=#>
-						</li>
-						<li>
-							<img src="#" width=# height=#>
-						</li>
-						<li>
-							<img src="#" width=# height=#>
-						</li>
-					</ul>
-				</div>
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a class="basket" href="#">Корзина</a></li>
+				</ul>
+			</nav>
+			<div class="slider">
+				<ul>
+					<li class="slider-item">
+						<b class="slider-title">Долго, дорого, скрупулезно</b>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+						<a href="#">Узнать больше</a>
+						<img src="#" width=# height=#>
+					</li>
+					<li class="slider-item">
+						<b class="slider-title">Любим математику как никто другой</b>
+						<p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+						<a href="#">Узнать больше</a>
+						<img src="#" width=# height=#>
+					</li>
+					<li class="slider-item">
+						<b class="slider-title">ТОлько ночь, только хардкор</b>
+						<p>Работать днем, как все? Ближе к полуночи работа только начинается</p>
+						<a href="#">Узнать больше</a>
+						<img src="#" width=# height=#>
+					</li>
+				</ul>
 			</div>
     </header>
-		<main>
-			<div class="services">
-				<div class="websites">
-					<!--Картинка-ссылка?-->
+		<main class="container">
+			<section class="services">
+				<div class="services-item">
 					<img src="#" width=# height=# alt="Веб-сайты">
 					<h2>Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-					<a href="#">Заказать</a>
+					<a class="btn" href="#">Заказать</a>
 				</div>
-				<div class="applications">
+				<div class="services-item">
 					<img src="#" width=# height=# alt="Приложения">
 					<h2>Приложения</h2>
 					<p>Покорите топ-10 прилодений в Appstore и Google Play</p>
-					<a href="#">Заказать</a>
+					<a class="btn" href="#">Заказать</a>
 				</div>
-				<div class="presentations">
+				<div class="services-item">
 					<img src="#" width=# height=# alt="Презентации">
 					<h2>Презентации</h2>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a href="#">Заказать</a>
+					<a class="btn" href="#">Заказать</a>
 				</div>
-			</div>
-			<div class="about-company">
-				<div class="block-1">
-					<!--Не уверена по поводу тегов span-->
-					<span>Мы - маленькая, но гордая дизайн-студия из Краснодара</span>
+			</section>
+			<section class="about-company">
+				<div class="about-left">
+					<b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 					<h3>Выполняем заказы на разработку:</h3>
 					<ul>
@@ -86,7 +73,7 @@
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
 				</div>
-				<div class="block-2">
+				<div class="about-right">
 					<img src="#" width=# height=# alt="Nerd's">
 					<table>
 						<caption>С 2004 года любим точность во всем:</caption>
@@ -102,43 +89,40 @@
 						</tr>
 					</table>
 				</div>
-			</div>
-			<div class="partners">
-				<div class="html-academy">
-					<!--Логотип-ссылка?-->
-					<img src="#" width=# height=# alt="Html Academy">
+			</section>
+			<section class="partners">
+				<div class="partners-logo">
+					<a href="#"><img src="#" width=# height=# alt="Html Academy"></a>
 				</div>
-				<div class="borodinski">
-					<img src="#" width=# height=# alt="Barbershop Borodinski">
+				<div class="partners-logo">
+					<a href="#"><img src="#" width=# height=# alt="Barbershop Borodinski"></a>
 				</div>
-				<div class="pink">
-					<img src="#" width=# height=# alt="Pink">
+				<div class="partners-logo">
+					<a href="#"><img src="#" width=# height=# alt="Pink"></a>
 				</div>
-				<div class="mishka">
-					<img src="#" width=# height=# alt="Mishka">
+				<div class="partners-logo">
+					<a href="#"><img src="#" width=# height=# alt="Mishka"></a>
 				</div>
-			</div>
-			<div class="contacts">
-				<!--Карта - фон?-->
-				<div class="address">
-					<h3>Nerds design studio</h3>
-					<p>191186, Санкт-Петербург,<br>
-					ул. Б.Конюшенная, д. 19/8</p>
-					<!--Не уверена по поводу тегов span-->
-					<span>тел.+7(812)275-75-75</span>
-					<a href=#>Напишите нам</a>
-				</div>
-			</div>
+			</section>
 		</main>
-		<footer>
+		<div class="map">
+			<!-- карта, которую пока не знаю, как делать-->
+			<div class="contacts">
+				<h3>Nerds design studio</h3>
+				<p>191186, Санкт-Петербург,<br>
+				ул. Б.Конюшенная, д. 19/8</p>
+			</div>
+			<tel>тел.+7(812)275-75-75</tel>
+			<a class="btn" href=#>Напишите нам</a>
+		</div>
+		<footer class="container">
 			<div class="social">
-				<a class="vk" href="#">vk</a>
-				<a class="fb" href="#">facebook</a>
-				<a class="instagram" href="#">instagram</a>
+				<a class="social-btn" href="#">vk</a>
+				<a class="social-btn" href="#">facebook</a>
+				<a class="social-btn" href="#">instagram</a>
 			</div>
 			<div class="slogan">
-				<!--Не уверена по поводу тегов span-->
-				<span>Давайте дружить, это выгодно!</span>
+				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</footer>
