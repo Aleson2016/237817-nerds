@@ -4,22 +4,25 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header>
 			<div class="container">
-				<div class="logo">
-					<img src="img/nerds-logo.png" width=160px height=65px alt="Nerd's"> 
+				<div class="navigation clearfix">
+					<div class="logo">
+						<img src="img/nerds-logo.png" width=160px height=65px alt="Nerd's"> 
+					</div>
+					<nav class="main-navigation">
+						<ul>
+							<li><a href="#">Студия</a></li>
+							<li><a href="#">Клиенты</a></li>
+							<li><a href="catalog.html">Магазин</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a class="basket" href="#">Корзина</a></li>
+						</ul>
+					</nav>
 				</div>
-				<nav class="main-navigation">
-					<ul>
-						<li><a href="#">Студия</a></li>
-						<li><a href="#">Клиенты</a></li>
-						<li><a href="catalog.html">Магазин</a></li>
-						<li><a href="#">Контакты</a></li>
-						<li><a class="basket" href="#">Корзина</a></li>
-					</ul>
-				</nav>
 				<div class="slider">
 					<ul>
 						<li class="slider-item">
@@ -45,7 +48,7 @@
 			</div>
     </header>
 		<main class="container">
-			<section class="services">
+			<section class="services clearfix">
 				<div class="services-item">
 					<img src="img/services-web-site.jpg" width=300px height=146px alt="Веб-сайты">
 					<h2>Веб-сайты</h2>
@@ -65,7 +68,7 @@
 					<a class="btn" href="#">Заказать</a>
 				</div>
 			</section>
-			<section class="about-company">
+			<section class="about-company clearfix">
 				<div class="about-left">
 					<b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -93,7 +96,7 @@
 					</table>
 				</div>
 			</section>
-			<section class="partners">
+			<section class="partners clearfix">
 				<div class="partners-logo">
 					<a href="#"><img src="img/logo-html.png" width=199px height=68px alt="Html Academy"></a>
 				</div>
@@ -110,15 +113,17 @@
 		</main>
 		<div class="map">
 			<!-- карта, которую пока не знаю, как делать-->
-			<div class="contacts">
-				<h3>Nerds design studio</h3>
-				<p>191186, Санкт-Петербург,<br>
-				ул. Б.Конюшенная, д. 19/8</p>
-			</div>
-			<tel>тел.+7(812)275-75-75</tel>
-			<a class="btn" href=#>Напишите нам</a>
+			<div class="container">
+				<div class="contacts">
+					<h3>Nerds design studio</h3>
+					<p>191186, Санкт-Петербург,<br>
+					ул. Б.Конюшенная, д. 19/8</p>
+					<tel>тел.+7(812)275-75-75</tel>
+					<a class="btn" href=#>Напишите нам</a>
+				</div>
+			</div>	
 		</div>
-		<footer class="container">
+		<footer class="container clearfix">
 			<div class="social">
 				<a class="social-btn" href="#">vk</a>
 				<a class="social-btn" href="#">facebook</a>
