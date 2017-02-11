@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-		<link href="css/style.css" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
 			<div class="container">
 				<div class="navigation clearfix">
 					<div class="logo">
-						<img src="img/nerds-logo.png" width=160px height=65px alt="Nerd's"> 
+						<img src="img/nerds-logo.png" width="160" height="65" alt="Nerd's"> 
 					</div>
 					<nav class="main-navigation">
 						<ul>
@@ -24,45 +25,59 @@
 					</nav>
 				</div>
 				<div class="slider">
-					<ul>
-						<li class="slider-item">
-							<b class="slider-title">Долго, дорого, скрупулезно</b>
-							<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-							<a href="#">Узнать больше</a>
-							<img src="img/slide1.png" width=698px height=413px>
-						</li>
-						<li class="slider-item">
-							<b class="slider-title">Любим математику как никто другой</b>
-							<p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-							<a href="#">Узнать больше</a>
-							<img src="img/slide2.png" width=698px height=413px>
-						</li>
-						<li class="slider-item">
-							<b class="slider-title">Только ночь, только хардкор</b>
-							<p>Работать днем, как все? Ближе к полуночи работа только начинается</p>
-							<a href="#">Узнать больше</a>
-							<img src="img/slide3.png" width=698px height=413px>
-						</li>
-					</ul>
-				</div>
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>
+					<div class="slides">
+						<div class="slide">
+							<div class="slide-text">
+								<div class="slide-title">Долго, дорого, скрупулезно</div>
+								<p>Математически выверенный дизайн<br>
+								для вашего сайта или мобильного приложения.</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-text">
+								<div class="slide-title">Дорого, скрупулезно</div>
+								<p>Математически выверенный дизайн<br>
+								для вашего сайта или мобильного приложения.</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-text">
+								<div class="slide-title">Скрупулезно</div>
+								<p>Математически выверенный дизайн<br>
+								для вашего сайта или мобильного приложения.</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+						</div>
+					</div>
+      	</div>
 			</div>
     </header>
 		<main class="container">
 			<section class="services clearfix">
 				<div class="services-item">
-					<img src="img/services-web-site.jpg" width=300px height=146px alt="Веб-сайты">
+					<img src="img/services-web-site.jpg" width="300" height="146" alt="Веб-сайты">
 					<h2>Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
 					<a class="btn" href="#">Заказать</a>
 				</div>
 				<div class="services-item">
-					<img src="img/services-application.jpg" width=300px height=146px alt="Приложения">
+					<img src="img/services-application.jpg" width="300" height="146" alt="Приложения">
 					<h2>Приложения</h2>
 					<p>Покорите топ-10 прилодений в Appstore и Google Play</p>
 					<a class="btn" href="#">Заказать</a>
 				</div>
 				<div class="services-item">
-					<img src="img/services-presentation.jpg" width=300px height=146px alt="Презентации">
+					<img src="img/services-presentation.jpg" width="300" height="146" alt="Презентации">
 					<h2>Презентации</h2>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 					<a class="btn" href="#">Заказать</a>
@@ -80,13 +95,13 @@
 					</ul>
 				</div>
 				<div class="about-right">
-					<img src="img/nerds-illustration.png" width=360px height=208px alt="Nerd's">
+					<img src="img/nerds-illustration.png" width="360" height="208" alt="Nerd's">
 					<table>
 						<caption>С 2004 года любим точность во всем:</caption>
 						<tr>
-							<th>146%</th>
-							<th>100%</th>
-							<th>50%</th>
+							<th>146<sup>%</sup></th>
+							<th>100<sup>%</sup></th>
+							<th>50<sup>%</sup></th>
 						</tr>
 						<tr>
 							<td>Уровень самоотдачи</td>
@@ -98,30 +113,28 @@
 			</section>
 			<section class="partners clearfix">
 				<div class="partners-logo">
-					<a href="#"><img src="img/logo-html.png" width=199px height=68px alt="Html Academy"></a>
+					<a href="#"><img src="img/logo-html.png" width="199" height="68" alt="Html Academy"></a>
 				</div>
 				<div class="partners-logo">
-					<a href="#"><img src="img/logo-borodinski.png" width=209px height=90px alt="Barbershop Borodinski"></a>
+					<a href="#"><img src="img/logo-borodinski.png" width="209" height="90" alt="Barbershop Borodinski"></a>
 				</div>
 				<div class="partners-logo">
-					<a href="#"><img src="img/logo-pink.png" width=185px height=52px alt="Pink"></a>
+					<a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="Pink"></a>
 				</div>
 				<div class="partners-logo">
-					<a href="#"><img src="img/logo-mishka.png" width=173px height=84px alt="Mishka"></a>
+					<a href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="Mishka"></a>
 				</div>
 			</section>
 		</main>
 		<div class="map">
-			<!-- карта, которую пока не знаю, как делать-->
-			<div class="container">
-				<div class="contacts">
-					<h3>Nerds design studio</h3>
-					<p>191186, Санкт-Петербург,<br>
-					ул. Б.Конюшенная, д. 19/8</p>
-					<tel>тел.+7(812)275-75-75</tel>
-					<a class="btn" href=#>Напишите нам</a>
-				</div>
-			</div>	
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705242!2d30.320889251930897!3d59.93879418178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1486796635453" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="contacts">
+				<h3>Nerds design studio</h3>
+				<p>191186, Санкт-Петербург,<br>
+				ул. Б.Конюшенная, д. 19/8</p>
+				<tel>тел.+7(812)275-75-75</tel>
+				<a class="btn" href=#>Напишите нам</a>
+			</div>
 		</div>
 		<footer class="container clearfix">
 			<div class="social">
