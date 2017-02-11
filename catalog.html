@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-		<link href="css/style.css" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 		<header> 
 			<div class="container">
 				<div class="navigation clearfix">
 					<div class="logo">
-						<a href="index.html"><img src="img/nerds-logo.png" width=161px height=65px alt="Nerd's"></a> 
+						<a href="index.html"><img src="img/nerds-logo.png" width="161" height="65" alt="Nerd's"></a> 
 					</div>
 					<nav class="main-navigation">
 						<ul>
 							<li><a href="#">Студия</a></li>
 							<li><a href="#">Клиенты</a></li>
-							<li><a href="catalog.html">Магазин</a></li>
+							<li class="active"><span >Магазин</span></li>
 							<li><a href="#">Контакты</a></li>
 							<li><a class="basket" href="#">Корзина</a></li>
 						</ul>
@@ -32,59 +33,68 @@
 					<form action="#" method="get">
 						<div class="filter-item">
 							<h3>Стоимость</h3>
-							<!--Для бегунка делаю, как и договорились, 3 дива
-							<div></div>
-							<div></div>
-							<div></div>
-	-->
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">от<input type="text" value="0"></label>
+									<label class="max-price">до<input type="text" value="15000"></label>
+								</div>
+							</div>
 						</div>
 						<div class="filter-item">
 							<h3>Сетка</h3>
-							<label for="adaptive">Адаптивная</label>
 							<input type="radio" id="adaptive" name="filter" value="adaptive" checked>
-							<label for="fixed">Фиксированная</label> 
+							<label class="radio" for="adaptive">Адаптивная</label><br>
 							<input type="radio" id="fixed" name="filter" value="fixed">
-							<label for="rubber">Резиновый</label> 
+							<label class="radio" for="fixed">Фиксированная</label><br> 
 							<input type="radio" id="rubber" name="filter" value="rubber">
+							<label class="radio" for="rubber">Резиновый</label><br> 
 						</div>
 						<div class="filter-item">
 							<h3>Особенности</h3>
-							<label for="slider">Слайдер</label> 
 							<input type="checkbox" id="slider" name="slider" checked>
-							<label for="advantage">Блок преимуществ</label>
+							<label class="checkbox" for="slider">Слайдер</label><br> 
 							<input type="checkbox" id="advantage" name="advantage"> 
-							<label for="news">Новости</label> 
+							<label class="checkbox" for="advantage">Блок преимуществ</label><br>
 							<input type="checkbox" id="news" name="news" checked>
-							<label for="gallery">Галерея</label>
+							<label class="checkbox" for="news">Новости</label><br> 
 							<input type="checkbox" id="gallery" name="gallery">
-							<label for="basket">Корзина</label> 
+							<label class="checkbox" for="gallery">Галерея</label><br>
 							<input type="checkbox" id="basket" name="basket">
+							<label class="checkbox" for="basket">Корзина</label><br> 
 						</div>
 						<input type="submit" value="Показать">
 					</form>
 				</div>
 				<div class="products">
 					<div class="products-filter">
-						<h3>Сортировать</h3>
-						<button>По цене</button>
-						<button>По типу</button>
-						<button>По названию</button>
-						<button>По убыванию</button>
-						<button>По возрастанию</button>
+						<h3>Сортировать:</h3>
+						<a class="btn active" href="#">По цене</a>
+						<a class="btn" href="#">По типу</a>
+						<a class="btn" href="#">По названию</a>
+						<a class="btn active" href="#">По убыванию</a>
+						<a class="btn" href="#">По возрастанию</a>
 					</div>
 					<div class="products-list">
 						<article class="products-item">
-							<div></div>
-							<img src="img/img-sedona.jpg" width=360px height=576px alt="Sedona">
+							<div class="decoration"></div>
+							<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 							<div class="products-info">
 								<h3>Sedona</h3>
-								<p>Информационный сайт для туристов</p>
+								<p>Информационный сайт<br> 
+									для туристов</p>
 								<a class="btn" href="#">9 900 руб.</a>
 							</div>
 						</article>
 						<article class="products-item">
-							<div></div>
-							<img src="img/img-pink.jpg" width=360px height=576px alt="Pink App">
+							<div class="decoration"></div>
+							<img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
 							<div class="products-info">
 								<h3>Pink App</h3>
 								<p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -92,26 +102,28 @@
 							</div>
 						</article>
 						<article class="products-item">
-							<div></div>
-							<img src="img/img-barbershop.jpg" width=360px height=576px alt="Barbershop">
+							<div class="decoration"></div>
+							<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
 							<div class="products-info">
 								<h3>Barbershop</h3>
-								<p>Сайт салона красоты. Для мужчин, да.</p>
+								<p>Сайт салона красоты.<br> 
+									Для мужчин, да.</p>
 								<a class="btn" href="#">9 900 руб.</a>
 							</div>
 						</article>
 						<article class="products-item">
-							<div></div>
-							<img src="img/img-mishka.jpg" width=360px height=576px alt="Mishka">
+							<div class="decoration"></div>
+							<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
 							<div class="products-info">
 								<h3>Mishka</h3>
-								<p>Интернет-магазин вязаных игрушек</p>
+								<p>Интернет-магазин<br> 
+									вязаных игрушек</p>
 								<a class="btn" href="#">9 900 руб.</a>
 							</div>
 						</article>
 						<article class="products-item">
-							<div></div>
-							<img src="img/img-aplus.jpg" width=360px height=576px alt="A Plus">
+							<div class="decoration"></div>
+							<img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
 							<div class="products-info">
 								<h3>A Plus</h3>
 								<p>Лендинг курсов повышения квалификации</p>
@@ -119,8 +131,8 @@
 							</div>
 						</article>
 						<article class="products-item">
-							<div></div>
-							<img src="img/img-kvast.jpg" width=360px height=576px alt="Кваст">
+							<div class="decoration"></div>
+							<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
 							<div class="products-info">
 								<h3>Кваст</h3>
 								<p>Промо-сайт производителя крафтового кваса</p>
@@ -134,20 +146,18 @@
 				<a class="btn active" href="#">1</a>
 				<a class="btn" href="#">2</a>
 				<a class="btn" href="#">3</a>
-				<a class="btn" href="#">Следующая</a>
+				<a class="btn next" href="#">Следующая</a>
 			</div>
 		</main>
 		<div class="map">
-			<!-- карта, которую пока не знаю, как делать-->
-			<div class="container">
-				<div class="contacts">
-					<h3>Nerds design studio</h3>
-					<p>191186, Санкт-Петербург,<br>
-					ул. Б.Конюшенная, д. 19/8</p>
-					<tel>тел.+7(812)275-75-75</tel>
-					<a class="btn" href=#>Напишите нам</a>
-				</div>
-			</div>	
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705242!2d30.320889251930897!3d59.93879418178723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1486796635453" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="contacts">
+				<h3>Nerds design studio</h3>
+				<p>191186, Санкт-Петербург,<br>
+				ул. Б.Конюшенная, д. 19/8</p>
+				<tel>тел.+7(812)275-75-75</tel>
+				<a class="btn" href=#>Напишите нам</a>
+			</div>
 		</div>
 		<footer class="container clearfix">
 			<div class="social">
