@@ -1,6 +1,6 @@
 body {
 	font-family: "Roboto", "Arial", sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 	color: #283136;
 	line-height: 24px;
 	font-size: 16px;
@@ -57,7 +57,7 @@ header {
 	font-size: 16px;
 	line-height: 30px;
 	text-transform: uppercase;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000000;
 }
 
@@ -67,7 +67,7 @@ header {
 	font-size: 16px;
 	line-height: 30px;
 	text-transform: uppercase;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000000;
 }
 
@@ -120,8 +120,9 @@ header {
     position:relative;
     width:100%;
     height:420px;
-    margin:0 auto; /*не уверена, нужен ли auto, т.к. ширина 100% - родитель - контейнер с паддингами*/
+    margin:0 auto; 
 }
+
 .slider input[type=radio] {
     position:absolute;
     opacity:0;
@@ -168,7 +169,7 @@ header {
 .slide-title{
     font-size:55px;
     line-height:55px;
-    font-weight:medium;
+    font-weight:500;
     color: #000000;
 }
 .slide .btn{
@@ -184,6 +185,16 @@ header {
     background:#fb565a;
     border-radius:3px;
 }
+
+.slide .btn:hover {
+	background-color: #e74246;
+}
+
+.slide .btn:active {
+	color: rgba(255,255,255,0.3);
+	background-color: #d7373b;
+}
+
 .slide:nth-child(1){
     background-image:url("../img/slide1.png");
     background-repeat:no-repeat;
@@ -221,7 +232,7 @@ header h1 {
 	padding-bottom: 117px;
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000000;
 }
 
@@ -263,7 +274,7 @@ header h1 {
 	font-family: inherit;
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #ffffff;
 	border-radius: 2px;
 }
@@ -303,12 +314,12 @@ header h1 {
 }
 
 .services-item:nth-child(3) .btn:active {
-	background-color: e5a722;
+	background-color: #e5a722;
 	color: rgba(255,255,255,0.3);
 }
 
 .about-company {
-	padding: 0px 0px 80px;
+	padding: 0 0 80px;
 }
 
 .about-left {
@@ -317,7 +328,7 @@ header h1 {
 }
 
 .about-left b {
-	font-weight: medium;
+	font-weight: 500;
 	color: #000000;
 	line-height: 45px;
 	font-size: 45px;
@@ -467,7 +478,7 @@ header h1 {
 	border: 8px solid #ffffff;
 	border-radius: 50%;
 	background: #ababab;
-	box-shadow: 0 2px 1 px 0 #cfcfcf;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
 .range-controls .toggle-min {
@@ -574,6 +585,15 @@ header h1 {
 	background-color: #eeeeee;
 }
 
+.filter input[type="submit"]:hover {
+	background-color: #dfdfdf;
+}
+
+.filter input[type="submit"]:active {
+	color: rgba(0,0,0,0.3);
+	background-color: #d5d5d5;
+}
+
 .products {
 	float: right;
 	width: 760px;
@@ -604,14 +624,42 @@ header h1 {
 	opacity: 0.3;
 }
 
+.products-filter .btn:last-child {
+	margin-right: 0;
+}
+
+.products-filter .triangle-up,
+.products-filter .triangle-down {
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+
+.products-filter .triangle-down {
+	border-top: 10px solid #000000;
+}
+
+.products-filter .triangle-up {
+	border-bottom: 10px solid #000000;
+}
+
+.products-filter .btn:hover {
+	opacity: 0.6;
+}
+
+.products-filter .btn:active {
+	opacity: 1;
+}
+
 .products-filter .active {
 	opacity: 1;
 }
 
-/*как сделать с помощью CSS треугольник для фильтра "по возрастанию" и "по убыванию"?*/
-
 .products-list {
-	font-size: 0px;
+	font-size: 0;
+	line-height: 0;
 }
 
 .products-item {
@@ -626,38 +674,40 @@ header h1 {
 	border-radius: 5px 5px 0 0;
 }
 
-/*не понимаю, откуда у .products-item взялся паддинг снизу?*/
-
 .products-item:nth-child(2n) {
 	margin-right: 0px;
 }
 
-.products-item::before {
-	position: absolute;
-	top: 13px;
-	left: 16px;
-	content: "";
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-	background-color: #ffffff;
-}
-
-.products-item::after {
-	position: absolute;
-	top: 13px;
-	left: 39px;
-	content: "";
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-	background-color: #ffffff;
+.products-item:hover {
+	background-color: #4d4d4d;
 }
 
 .products-item .decoration {
 	position: absolute;
 	top: 13px;
-	left: 62px;
+	left: 16px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.products-item .decoration::before {
+	position: absolute;
+	top: 0;
+	left: 23px;
+	content: "";
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.products-item .decoration::after {
+	position: absolute;
+	top: 0;
+	left: 46px;
+	content: "";
 	width: 14px;
 	height: 14px;
 	border-radius: 50%;
@@ -703,7 +753,7 @@ header h1 {
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
-	font-weight: medium;
+	font-weight: 500;
 	color: #ffffff;
 	background-color: #fb565a;
 }
@@ -735,17 +785,28 @@ header h1 {
 	height: 10px;
 	padding: 20px;
 	margin-right: 5px;
-	vertical-align: top;
+	vertical-align: middle;
 	text-align: center;
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
-	font-weight: medium;
+	font-weight: 500;
 	background-color: #eeeeee;
 	color: #000000;
 	border-radius: 3px;
 }
+
+.paginator .btn:hover {
+	background-color: #dfdfdf;
+}
+
+.paginator .btn:active {
+	color: rgba(0,0,0,0.3);
+	background-color: #d5d5d5;
+}
+
+/*нужно ли убрать у активной страницы href=#?*/
 
 .paginator .active {
 	padding: 17px;
@@ -768,14 +829,13 @@ header h1 {
 .contacts {
 	position: absolute;
 	top: 54px;
-	left: 140px;
+	left: 50%;
+	margin-left: -580px;
 	width: 229px;
 	padding: 45px;
 	z-index: 5;
 	background-color: #ffffff;
 }
-
-/*.contacts спозиционированы абсолютно, т.е. не центруются как в контейнере, а просто висят с отступом слева 140px, так и должно быть?*/ 
 
 .contacts h3 {
 	font-size: 18px;
@@ -821,7 +881,6 @@ header h1 {
 	border-radius: 50%;
 	margin-right: 12px;
 	background-color: #e1e1e1;
-	/*Нужно ли восстановить текст? убрать подчеркивание и сделать text-indent: -1000px?*/
 }
 
 .social-btn::before {
@@ -837,7 +896,7 @@ header h1 {
 	margin-top: -8px;
 	width: 26px;
   height: 16px;
-  background-position: -5px -159px;
+  background-position: -5px -229px;
 }
 
 .social-btn:nth-child(2)::before {
@@ -862,6 +921,10 @@ header h1 {
 
 .social-btn:active {
 	background-color: #d7373b;
+}
+
+.social-btn:active::before {
+	
 }
 
 /*как сделать, чтобы при нажатии у иконки было opacity: 0.3;?*/
