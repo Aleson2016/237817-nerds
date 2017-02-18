@@ -271,6 +271,7 @@ header h1 {
 	margin-top: 0;
 	padding-top: 15px;
 	width: 260px;
+	
 }
 
 .services-item .btn {
@@ -389,10 +390,14 @@ header h1 {
 .about-right th {
 	text-align: left;
 	width: 121px;
-	padding-bottom: 15px;
+	padding-bottom: 20px;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: bold;
+}
+
+.about-right sup {
+	font-size: 26px;
 }
 
 .about-right td {
@@ -402,7 +407,7 @@ header h1 {
 
 .partners {
 	padding-top: 46px; 
-	padding-bottom: 37px;
+	padding-bottom: 33px;
 	margin-bottom: 80px;
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
@@ -433,15 +438,15 @@ header h1 {
 	background-color: #eeeeee;
 }
 
-.partners-item {
+.partners-logo img {
 	opacity: 0.2;
 }
 
-.partners-item:hover {
+.partners-logo img:hover {
 	opacity: 1;
 }
 
-.partners-item:active {
+.partners-logo img:active {
 	opacity: 0.1;
 }
 
@@ -553,6 +558,8 @@ header h1 {
 .filter-item .checkbox {
 	position: relative;
 	display: block;
+	margin: 0;
+	padding: 0;
 	padding-left: 36px;
 	font-size: 16px;
 	line-height: 20px;
