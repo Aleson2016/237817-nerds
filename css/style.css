@@ -1040,10 +1040,10 @@ iframe {
 .modal-content-close::before,
 .modal-content-close::after {
 	position: absolute;
-	top: 9px;
-	left: -3px;
+	top: 10px;
+	left: 0;
 	content: "";
-	width: 30px;
+	width: 28px;
 	height: 5px;
 	background-color: #fecccd;
 }
@@ -1067,6 +1067,9 @@ iframe {
 }
 
 .modal-content h2{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
@@ -1090,8 +1093,8 @@ iframe {
 
 .modal-content input[type="text"],
 .modal-content textarea {
-	padding: 14px; 
-	margin-top: 10px;
+	padding: 15px; 
+	margin-top: 8px;
 	border: 2px solid #d7dcde;
 	border-radius: 2px;
 	font-family: "Roboto", "Arial", sans-serif;
@@ -1103,7 +1106,7 @@ iframe {
 
 .modal-content input[type="text"] {
 	width: 328px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 
 .modal-content textarea {
@@ -1125,9 +1128,11 @@ iframe {
 .modal-content .btn {
 	display: block;
 	width: 260px;
-	padding: 20px;
+	padding: 16px;
+	border: none;
 	color: #ffffff;
 	background-color: #fb565a;
+	
 }
 
 .modal-content .btn:hover {
