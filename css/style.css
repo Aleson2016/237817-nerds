@@ -1,4 +1,5 @@
 body {
+	min-width: 1200px;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 400;
 	color: #283136;
@@ -100,9 +101,9 @@ header {
 .main-navigation .active::before {
 	content: "";
 	position: absolute;
-	right: 25px;
-	bottom: 0;
-	left: 25px;
+	right: 21px;
+	bottom: -2px;
+	left: 21px;
 	height: 2px;
 	background-color: #fb565a;
 }
@@ -174,12 +175,20 @@ header {
   color: #283136;
 }
 .slide-title{
+	padding: 0;
+	margin: 0;
 	margin-bottom: 26px;
+	text-align: left;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000;
 }
+
+.slide-text p {
+	width: 420px;
+}
+
 .slide .btn{
   display: block;
   width: 200px;
@@ -544,7 +553,7 @@ header h1 {
 	width: 60px;
 	padding: 8px 10px;
 	margin-left: 10px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -597,7 +606,7 @@ header h1 {
 	content: "";
 	position: absolute;
 	left: 0;
-	width: 23px;
+	width: 30px;
   height: 23px;
 	background: url("../img/sprite.png") no-repeat;
   background-position: -5px -30px;
@@ -1085,6 +1094,10 @@ iframe {
 	margin-top: 10px;
 	border: 2px solid #d7dcde;
 	border-radius: 2px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
 	color: #444444;
 }
 
